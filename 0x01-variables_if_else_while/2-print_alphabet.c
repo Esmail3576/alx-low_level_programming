@@ -12,6 +12,6 @@ int main(void)
 
 	for (i = 0; i < 27; i++)
 		putchar(alph[i]);
-	putchar('\n');
+	/* putchar('\n'); */
 	return (0);
 }
