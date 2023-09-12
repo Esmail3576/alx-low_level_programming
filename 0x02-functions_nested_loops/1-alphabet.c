@@ -1,12 +1,16 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - print small letters
  *
  * Retrun: Always 0.
  *
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char ch[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+
+	for (i = 0; i < 27; i++)
+		_putchar(ch[i]);
+	_putchar('\n');
 }
