@@ -21,8 +21,9 @@ int main(void)
 void print_alphabet(void)
 {
 	char ch[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (int i = 0; i < 27; i++)
+	for (i = 0; i < 27; i++)
 		putchar(ch[i]);
 	putchar('\n');
 }
