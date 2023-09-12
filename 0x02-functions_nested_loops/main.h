@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdio.h>
 #include "_putchar.c"
 void print_alphabet(void);
@@ -17,3 +19,4 @@ void print_alphabet(void)
 		_putchar(ch[i]);
 	_putchar('\n');
 }
+#endif
