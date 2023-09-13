@@ -28,8 +28,11 @@ void jack_bauer(void)
 					_putchar('\n');
 				}
 			}
+			if (i == 2 && t == 3)
+			{
+				i = 4;
+				t = 10;
+			}
 		}
-		if (i == 2 && t == 3)
-			i = 4;
 	}
 }
