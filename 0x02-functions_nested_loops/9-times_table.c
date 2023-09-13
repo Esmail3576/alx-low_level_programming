@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * times_table = prints the 9 times table
+ * times_table = prints the times table
  *
  * Return: Always 0.
  *
@@ -16,7 +16,7 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			r = i * j;
-			if (r > 10)
+			if (r > 9)
 			{
 				_putchar('0' + (r / 10));
 				_putchar('0' + (r % 10));
