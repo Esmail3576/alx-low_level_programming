@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_diagnoal - draw a diagnoal line in terminal
+ * print_diagonal - draw a diagonal line in terminal
  *
  * @n: length of the line
  *
@@ -21,7 +21,8 @@ void print_diagonal(int n)
 		{
 			for (j = 0; j < i; j++)
 				_putchar(' ');
-			_putchar('\\');										}
-		_putchar('\n');
+			_putchar('\\');
+			_putchar('\n');
+		}
 	}
 }
