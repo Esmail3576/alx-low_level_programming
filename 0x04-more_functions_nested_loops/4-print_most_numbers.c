@@ -6,12 +6,12 @@
  */
 void print_most_numbers(void)
 {
-	char numbers[] = "0123456789";
+	char n[] = "0123456789";
 	int i;
 
 	for (i = 0; i < 10; i++)
 	{
-		if (numbers[i] != 2 && numbers[i] != 4)
+		if (n[i] != n[2] && n[i] != n[4])
 			_putchar(numbers[i]);
 	}
 	_putchar('\n');
