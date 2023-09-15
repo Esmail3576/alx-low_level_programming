@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		if (c[i] != 2 && c[i] != 4)
+		if (c[i] != c[2] && c[i] != c[4])
 			_putchar(c[i]);
 	}
 	_putchar('\n');
