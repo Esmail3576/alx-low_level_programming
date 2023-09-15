@@ -4,7 +4,7 @@
  *
  * @c: integer value for a char
  *
- * Return: 1 or 
+ * Return: 1 or 0
  *
  */
 int _isupper(int c)
