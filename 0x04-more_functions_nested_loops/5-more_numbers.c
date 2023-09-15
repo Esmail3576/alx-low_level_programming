@@ -8,20 +8,15 @@ void print_numbers(void)
 {
 	int i;
 	int j;
-	int h;
 
-	for (j = 0; j <=10; j++)
+	for (i = 0; i <=10; i++)
 	{
-		for (h = 0; h <= 14; h++)
+		for (j = 0; j <= 14; j++)
 		{
-			i = h;
-			if (h > 9)
-			{
-				_putchart(1 + 48);
-				i = i % h;
-			}
-			_putchar(i + 48);
+			if (j > 9)
+				_putchar('0' + (j / 10));
+			_putchar('0' + (J % 10));
 		}
 		_putchar('\n');
 	}
-}
+i}
