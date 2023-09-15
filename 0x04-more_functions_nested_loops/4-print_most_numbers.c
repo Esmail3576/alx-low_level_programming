@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_numbers - print from 0 - 9
+ * print_most_numbers - print from 0 - 9 without 2,4
  *
  * Return: void
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	char numbers[] = "0123456789";
 	int i;
