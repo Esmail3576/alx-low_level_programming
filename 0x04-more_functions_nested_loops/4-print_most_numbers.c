@@ -12,7 +12,7 @@ void print_most_numbers(void)
 	for (i = 0; i < 10; i++)
 	{
 		if (n[i] != n[2] && n[i] != n[4])
-			_putchar(numbers[i]);
+			_putchar(n[i]);
 	}
 	_putchar('\n');
 }
