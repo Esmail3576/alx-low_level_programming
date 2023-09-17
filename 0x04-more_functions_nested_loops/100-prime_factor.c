@@ -29,6 +29,6 @@ int main(void)
 			m = m + 2;
 		}
 	}
-	printf("%d", m);
+	printf("%d\n", m);
 	return (0);
 }
