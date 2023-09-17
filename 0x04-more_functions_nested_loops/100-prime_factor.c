@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i = 1;
-	unsigned long long prime = 612852475143;
+	unsigned long prime = 612852475143;
 	int m = 3;
 
 	while (i > 0)
