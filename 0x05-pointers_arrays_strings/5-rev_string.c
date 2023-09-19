@@ -27,8 +27,8 @@ void rev_string(char *s)
 	}
 	while (*s != '\0')
 	{
+		c--;
 		*s = *c;
 		s++;
-		c++;
 	}
 }
