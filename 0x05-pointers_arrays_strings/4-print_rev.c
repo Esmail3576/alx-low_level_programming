@@ -9,18 +9,18 @@
  */
 void print_rev(char *s)
 {
-	char t[20];
 	int i = 0;
 
 	while (*s != '\0')
 	{
-		t[i] = *s;
+		/*t[i] = *s;*/
 		i++;
 		s++;
 	}
+	/*char t[i] = *s;*/
 	while (*s != '\0')
 	{
-		_putchar(t[i]);
+		_putchar((*s + i));
 	}
 	_putchar('\n');
 }
