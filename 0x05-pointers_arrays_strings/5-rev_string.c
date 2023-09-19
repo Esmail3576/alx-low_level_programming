@@ -25,10 +25,10 @@ void rev_string(char *s)
 		*c = *s;
 		c++;
 	}
-	while (*s != '\0')
+	/**while (*s != '\0')
 	{
 		c--;
 		*s = *c;
 		s++;
-	}
+	}*/
 }
