@@ -22,7 +22,7 @@ void rev_string(char *s)
 	}
 	for (j = 0; i > 0; j++)
 	{
-		c[j] = s[i];
+		*(c[j]) = s[i];
 		i--;
 	}
 	/**while (*s != '\0')
