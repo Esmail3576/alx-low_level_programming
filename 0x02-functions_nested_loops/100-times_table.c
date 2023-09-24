@@ -1,11 +1,8 @@
 #include "main.h"
 /**
  * print_times_table - prints the times table
- *
  * @n: time table for n
- *
  * Return: Always 0.
- *
  */
 void print_times_table(int n)
 {
@@ -20,34 +17,37 @@ void print_times_table(int n)
 				r = i * j;
 				if (r <= 9 && j != 0)
 					_putchar(' ');
-				if (r > 9)
-				{
-					if (r > 99)
-					{
-						_putchar('0' + (r / 100));
-						_putchar('0' + ((r / 10) % 10));
-						_putchar('0' + (r % 10));
-					}
-					else
-					{
-						_putchar('0' + (r / 10));
-						_putchar('0' + (r % 10));
-					}
-				}
-				else
-				{
-					_putchar('0' + r);
-				}
+				print(r)l;
 				if (j != n)
 				{
 					_putchar(',');
 					_putchar(' ');
-					r = i * (j + 1);
-					if (r <= 99)
+					if ((i * (j + 1)) <= 99)
 						_putchar(' ');
 				}
 			}
 			_putchar('\n');
 		}
 	}
+}
+/**
+ * print - print the result of mutlipication
+ * @r: the number that will print
+ * Return: void
+ */
+void print(int r)
+{
+	if (r > 9)
+	{
+		if (r > 99)
+		{
+			_putchar('0' + (r / 100));
+			_putchar('0' + ((r / 10) % 10));
+		}
+		else
+		{
+			_putchar('0' + (r / 10));
+		}
+	}
+	_putchar('0' + (r % 10));
 }
