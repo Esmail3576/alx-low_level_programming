@@ -18,6 +18,6 @@ int main(void)
 		else if (i % 3 == 0)
 			r = r + i;
 	}
-	printf("%d", r);
+	printf("%d\n", r);
 	return (0);
 }
