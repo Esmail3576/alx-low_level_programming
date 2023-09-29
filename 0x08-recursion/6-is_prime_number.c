@@ -12,7 +12,8 @@ int is_prime_number(int n)
 	}
 	else if (n % 2 == 0)
 	{
-		is_prime_number(n / 2);
+		n = is_prime_number(n / 2);
+		return (n);
 	}
 	else
 	{
