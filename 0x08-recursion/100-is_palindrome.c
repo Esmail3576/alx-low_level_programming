@@ -6,7 +6,7 @@
  */
 int is_palindrome(char *s)
 {
-	char *c = "";
+	char *c = s;
 
 	if (*s == '\0')
 	{
@@ -19,6 +19,7 @@ int is_palindrome(char *s)
 		c++;
 		return (1);
 	}
+
 	else
 		return (0);
 }
