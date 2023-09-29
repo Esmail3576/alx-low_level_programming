@@ -6,15 +6,16 @@
  */
 int is_palindrome(char *s)
 {
-	char *c = s;
+	char *c = "";
+
 	if (*s == '\0')
 	{
 		return (0);
 	}
 	is_palindrome(s + 1);
-	c++;
 	*c = *s;
 	if (*c == *s)
+		c++;
 		return (1);
 	else
 		return (0);
