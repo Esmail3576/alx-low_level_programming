@@ -9,11 +9,11 @@ int is_palindrome(char *s)
 	char *c;
 	if (*s == '\0')
 	{
-		return;
+		return (0);
 	}
 	is_palindrome(s + 1);
 	*c = *s;
-	if (c == s)
+	if (*c == *s)
 		return (1);
 	else
 		return (0);
