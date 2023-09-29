@@ -12,6 +12,7 @@ int is_palindrome(char *s)
 		return (0);
 	}
 	is_palindrome(s + 1);
+	c++;
 	*c = *s;
 	if (*c == *s)
 		return (1);
