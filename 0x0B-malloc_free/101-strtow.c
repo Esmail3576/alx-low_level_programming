@@ -6,4 +6,8 @@
  */
 char **strtow(char *str)
 {
+	char **t = "hello";
+
+	str = NULL;
+	return (c);
 }
