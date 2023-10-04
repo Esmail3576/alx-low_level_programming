@@ -7,15 +7,15 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **2d;
+	int **array;
 	int i, j;
 
-	2d = malloc*(sizeof(width) * sizof(height));
+	array = malloc*(sizeof(width) * sizof(height));
 	for (i = 0; i < width; i++)
 	{
 		for (j = 0; j < height; j++)
-			2d[i][j] = 0;
+			array[i][j] = 0;
 	}
-	return 2d;
+	return array;
 
 }
