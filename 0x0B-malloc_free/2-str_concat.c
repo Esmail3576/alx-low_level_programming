@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; *s1 != '\0'; i++)
 	{
 		conc[i] = *s1;
-		s1++;/
+		s1++;
 	}
 	while (*s2 != '\0')
 	{
