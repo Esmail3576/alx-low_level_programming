@@ -6,7 +6,7 @@
  * @argv: argument vector
  * Return: return 0 or 
  */
-int main(int argc, **argv)
+int main(int argc, char *argv[])
 {
 	int cent = 0;
 	int coin = 0;
@@ -15,7 +15,7 @@ int main(int argc, **argv)
 		printf("Error\n");
 		return (1);	
 	}
-	cent = atoi(cent);
+	cent = atoi(argv[1]);
 	while (cent > 0)
 	{
 		coin++;
