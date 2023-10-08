@@ -4,16 +4,17 @@
  * main - prints minimum number of coins
  * @argc: argument count
  * @argv: argument vector
- * Return: return 0 or 
+ * Return: return 0 or 1.
  */
 int main(int argc, char *argv[])
 {
 	int cent = 0;
 	int coin = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);	
+		return (1);
 	}
 	cent = atoi(argv[1]);
 	while (cent > 0)
@@ -21,13 +22,14 @@ int main(int argc, char *argv[])
 		coin++;
 		if ((cent - 25) >= 0)
 			cent = cent - 25;
-		if ((cent - 10) >= 0)
+		else if ((cent - 10) >= 0)
 			cent = cent - 10;
-		if ((cent - 5) >= 0)
+		else if ((cent - 5) >= 0)
 			cent = cent - 5;
-		if ((cent - 2) >= 0)
+		else if ((cent - 2) >= 0)
 			cent = cent - 2;
-		cent--;
+		else
+			cent--;
 	}
 	printf("%d\n", coin);
 	return (0);
