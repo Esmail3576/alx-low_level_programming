@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
  * add_nodeint - dds a new node at the beginning of a listint_t list.
- * @n:
- * Return:
+ * @n: data value in linked list type integer
+ * @head: a pointer to linked list
+ * Return: a pinter to new linked list
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {

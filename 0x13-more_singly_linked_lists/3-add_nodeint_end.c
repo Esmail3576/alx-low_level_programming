@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
  * add_nodeint_end - adds a new node at the end
- * @n:
- * Return:
+ * @n: datab value integer
+ * @head: pointer to linked list pointer
+ * Return: a pointer to linked list
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {

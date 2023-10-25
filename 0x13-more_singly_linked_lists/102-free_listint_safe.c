@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
  * free_listint_safe -  frees a listint_t list.
- * @h:
- * Return:
+ * @h: a pointer to linked list pointer
+ * Return: number of nodes
  */
 size_t free_listint_safe(listint_t **h)
 {
