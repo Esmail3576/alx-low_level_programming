@@ -8,23 +8,25 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	unsigned int i;
+	list_t new;
 
-	if (head == NULL)
+	new = head;
+	if (new == NULL)
 	{
-		head->str = str;
+		new->str = strdup(str);
 		i = 0;
 		while (str[i] != '\0')
 			i++;
-		head->len = i;
-		head->next = NULL;
+		new->len = i;
+		new->next = NULL;
 	}
 	else
 	{
-		head->str = str;
+		new->str = strdup(str);
 		while (str[i] != '\0')
 			i++;
-		head->len = i;
-		head->next = head;
+		new->len = i;
+		new->next = head;
 	}
-	return (head);
+	return (new);
 }
