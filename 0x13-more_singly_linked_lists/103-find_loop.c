@@ -2,7 +2,7 @@
 /**
  * find_listint_loop - finds the loop in a linked list.
  * @head: a pointer to linked list
- * @Return: a pointer to linked list
+ * Return: a pointer to linked list
  */
 listint_t *find_listint_loop(listint_t *head)
 {
